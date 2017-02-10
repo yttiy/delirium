@@ -1,0 +1,15 @@
+[package]
+name = "delirium"
+version = "0.1.0"
+
+[dependencies]
+json = "*"
+winapi = "*"
+user32-sys = "*"
+kernel32-sys = "*"
+
+
+[dependencies.sdl2]
+version = "0.28"
+default-features = false
+features = ["image", "mixer", "ttf"]
