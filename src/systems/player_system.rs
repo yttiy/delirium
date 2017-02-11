@@ -30,7 +30,7 @@ impl System for PlayerSystem{
             body.dx = -40.0;
             p.vector = -1;
         }
-        if engine.event_manager.is_key_pressed(Keycode::Right)|| engine.event_manager.is_key_pressed(Keycode::D){
+        if engine.event_manager.is_key_pressed(Keycode::Right) || engine.event_manager.is_key_pressed(Keycode::D){
             body.dx = 40.0;
             p.vector = 1;
         }

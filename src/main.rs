@@ -21,7 +21,7 @@ fn main() {
     let mut config = Config::new();
     config.fps_limit = 150;
     config.vsync = true;
-    //config.window_resizable = true;
+    config.window_resizable = false;
     config.width = 960;
     config.height = 540;
     config.output_fps = true;

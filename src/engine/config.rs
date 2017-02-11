@@ -17,7 +17,7 @@ impl Config{
             title: "App",
             vsync: true,
             output_fps: false,
-            fps_limit: 1000,
+            fps_limit: 10000,
             window_resizable: false
         }
     }

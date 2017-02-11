@@ -21,7 +21,7 @@ impl Entity{
         &self.id
     }
 
-    pub fn add_component<T: Component + 'static>(&self, c: T){
+    pub fn add_component<T: Any + Component>(&self, c: T){
         self.components.borrow_mut().insert(TypeId::of::<T>(), Box::new(c));
     }
 

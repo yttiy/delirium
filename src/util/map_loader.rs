@@ -67,7 +67,7 @@ impl MapLoader{
         }
 
         let tileset = &parsed["tilesets"][0]["image"].as_str().unwrap();
-        let texture_path = s.to_string() + &"/../".to_string() + &tileset.to_string();
+        let texture_path = "res/map/".to_string() + &tileset.to_string();
 
         let tile_width = parsed["tilewidth"].as_i32().unwrap();
         let tile_height = parsed["tileheight"].as_i32().unwrap();
